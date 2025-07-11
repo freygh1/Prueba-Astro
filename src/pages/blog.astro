@@ -1,6 +1,7 @@
 ---
 const pageTitle = "Blog Page";
 import "../global/global.css";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -13,12 +14,7 @@ import "../global/global.css";
   </head>
   <body>
     <h1>Here is my {pageTitle}</h1>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about/">About</a></li>
-      <li><a href="/blog/">Blog</a></li>
-    </ul>
-
+    <Navbar />
     <h1>Here's my posts:</h1>
 
     <ul>

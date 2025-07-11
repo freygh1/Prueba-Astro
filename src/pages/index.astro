@@ -1,6 +1,7 @@
 ---
 const pageTitle = "HomePage";
 import "../global/global.css";
+import Navbar from "../components/Navbar.astro";
 ---
 
 <html lang="en">
@@ -14,17 +15,6 @@ import "../global/global.css";
 	<body>
 		<h1>This is my {pageTitle}</h1>
 		<h2>check out the menu:</h2>
-		<ul>
-			<li><a href="/">Home</a></li>
-			<li><a href="/about/">About</a></li>
-			<li>
-				<a href="/blog/">Blog</a>
-				<ul>
-					<li><a href="posts/first-post">My First Post</a></li>
-					<li><a href="posts/second-post">My First Post</a></li>
-					<li><a href="posts/third-post">My First Post</a></li>
-				</ul>
-			</li>
-		</ul>
+		<Navbar />
 	</body>
 </html>
